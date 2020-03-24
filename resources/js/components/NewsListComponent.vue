@@ -45,9 +45,6 @@
 				                {{ news.description }}
 				            </div>
 				        </div>
-				        <div class="kt-widget19__action">
-				            <a :href="news.url" target="_blank" class="btn btn-sm btn-label-brand btn-bold">Read More...</a>
-				        </div>
 				    </div>
 		        </div>
 	    </div>

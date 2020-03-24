@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <meta charset="utf-8" />
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }} | @yield('title') </title>
+        <title>{{ config('app.name', 'Laravel') }} </title>
         <meta name="description" content="">
 
         <!--begin::Fonts -->
