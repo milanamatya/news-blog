@@ -1,0 +1,7 @@
+/node_modules
+/storage/*.key
+/vendor
+.env
+.env.example
+.package-lock.json
+composer.lock
