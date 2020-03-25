@@ -75,16 +75,13 @@ import Source from './SourceComponent.vue'
 				let self = this;
 				axios.get('/api/getNewsList')
 				  .then(function (response) {
-				    // handle success
 				    if(response.data.status == 'ok'){
 				    	self.loading = 0;
 				    	self.newsList = response.data.articles
 				    }
-				    console.log(response);
 				  })
 				  .catch(function (error) {
-				    // handle error
-				    console.log(error);
+				    console.error(error);
 				  })
 				  .then(function () {
 				    // always executed
@@ -100,11 +97,10 @@ import Source from './SourceComponent.vue'
 				    	self.loading = 0;
 				    	self.newsList = response.data.articles
 				    }
-				    console.log(response);
 				  })
 				  .catch(function (error) {
 				    // handle error
-				    console.log(error);
+				    console.error(error);
 				  })
 				  .then(function () {
 				    // always executed
@@ -121,11 +117,10 @@ import Source from './SourceComponent.vue'
 				    	self.loading = 0;
 				    	self.newsList = response.data.articles
 				    }
-				    console.log(response);
 				  })
 				  .catch(function (error) {
 				    // handle error
-				    console.log(error);
+				    console.error(error);
 				  })
 				  .then(function () {
 				    // always executed

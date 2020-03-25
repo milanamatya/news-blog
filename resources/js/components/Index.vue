@@ -312,7 +312,7 @@
 				    self.views = response.data.data;
 				  })
 				  .catch(function (error) {
-				    console.log(error);
+				    console.error(error);
 				  });
 			},
 			findViews(type){
@@ -320,7 +320,6 @@
 				return flag===undefined ? 0 : flag.count_flag;
 			},
 			showModal(news){
-				console.log(news);
 				let self = this;
 				this.news = news;
 				axios.post('/api/getUsersViews', {
@@ -332,7 +331,7 @@
 					self.showModalFlag = 1;
 				  })
 				  .catch(function (error) {
-				    console.log(error);
+				    console.error(error);
 				  });
 
 			},
