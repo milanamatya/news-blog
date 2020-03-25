@@ -42,7 +42,7 @@
 		            <div class="kt-portlet__body">
 				        <div class="kt-widget19__wrapper">
 				            <div class="kt-widget19__text">
-				                {{ news.description }}
+				                <span v-html="news.description"></span>
 				            </div>
 				        </div>
 				    </div>
