@@ -22,6 +22,7 @@ Vue.component('news-list-component', require('./components/NewsListComponent.vue
 
 Vue.component('source-component', require('./components/SourceComponent.vue').default);
 Vue.component('news-index', require('./components/Index.vue').default);
+Vue.component('modal-component', require('./components/ModalComponent.vue').default);
 
 
 

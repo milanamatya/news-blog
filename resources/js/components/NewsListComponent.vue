@@ -20,7 +20,7 @@
 				    </div>
 		        </div>
 
-	        	<div v-show="loading==0" v-for="news in newsList" @click="newTab(news.url)" class="kt-portlet kt-portlet--height-fluid kt-widget19" style="cursor: pointer;">
+	        	<div v-show="loading==0" v-for="news in newsList" @click="show(news)" class="kt-portlet kt-portlet--height-fluid kt-widget19" style="cursor: pointer;">
 		            <div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
 		                <div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="height: 300px;">
 		                	<img :src="news.urlToImage" style="height: 100%; object-fit: cover ">
@@ -67,8 +67,9 @@ import Source from './SourceComponent.vue'
 			}
 		},
 		methods:{
-			newTab(url){
-				window.open(url,'_newtab');
+			show(news){
+				this.$emit('view',news);
+				// window.open(url,'_show');
 			},
 			getNews(){
 				let self = this;

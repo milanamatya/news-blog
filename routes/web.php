@@ -36,5 +36,8 @@ Route::group([ 'prefix' => 'api'], function(){
 
 
 	Route::get('getSourceList','SourceController@index');
+	Route::post('likeDislikeNews','NewsController@likeDislikeNews');
+	Route::post('getUsersViews','NewsController@getUsersViews');
+	
 	
 });
